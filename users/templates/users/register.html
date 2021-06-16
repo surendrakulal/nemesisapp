@@ -1,0 +1,14 @@
+{% extends "users/base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-8 offset-2">
+        <h3> Sign Up Form </h3>
+        <hr />
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" class="btn btn-success" value="Add">
+            </form>
+    </div>
+</div>
+{% endblock content %} 
